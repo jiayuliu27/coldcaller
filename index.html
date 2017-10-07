@@ -21,14 +21,53 @@
         </div>
         <p id="selected"></p>
         <script>
-
+            const prefilled = [ "Jhansiris Arias",
+                                "Betsabe Bajana",
+                                "Angelo Candelario",
+                                "Ashley Carrasquillo",
+                                "Christian Corte",
+                                "Dylan DiazMarrero",
+                                "Joseph Duran",
+                                "Sally Estevez",
+                                "Jackelyn Galindo",
+                                "Bethany Garcia",
+                                "Carlos Garcia",
+                                "Shirley Gonzalez",
+                                "Izaiah Guzman",
+                                "Claudia Hernandez",
+                                "Petal Jagdeo",
+                                "Alyssa Laborde",
+                                "Elvis Maliza",
+                                "Nichole Mandujano",
+                                "Catherine Mateo",
+                                "Venus Medina",
+                                "Jailee Mendo",
+                                "Diana Mendoza",
+                                "Leomary Nunez",
+                                "Bryan Oyuela",
+                                "Ariana Penalo",
+                                "Francisco Prieto",
+                                "Danelcy Ramos",
+                                "Rafael Rivas",
+                                "Ashley Rivera",
+                                "Andrea Tendilla",
+                                "Mana Tezuka",
+                                "Alyssa Vanegas",
+                                "Luis Yanchapanta",
+                                "Carolina Zhagnay" ];
+                                
             const load = () => {
+                
                 document.getElementById('submitOptions')
                         .onclick = ((e) => {
-
+                            console.log(prefilled)
                             let allStudents = document.getElementById('options')
                                                       .value
                                                       .split(' ');
+
+                            console.log(allStudents)
+
+                            allStudents = (allStudents.length > 1) ? allStudents : prefilled;
 
                             document.getElementById('inputForm')
                                     .style
